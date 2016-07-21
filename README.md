@@ -6,7 +6,7 @@
 ```shell
 npm install -g npm-assistor
 ```
-在项目根目录（package.json 所在文件夹）执行 
+在项目根目录（package.json 所在文件夹）执行  
 ```shell
 npm-assistor
 ```
@@ -16,10 +16,10 @@ npm-assistor
   ❯ init (用于 npm 包初始化，请在 npm init 后执行) 
     tag (用于发布前 master 分支的 tag 标记)
 ```
-选择 init 后的交互（Gif）：  
-
-选择 tag 后的交互（Gif）：
-
+**选择 init 后的交互（Gif)**  
+![npm-assistor-init](http://image-2.plusman.cn/image/npm-assistor-init.gif)
+**选择 tag 后的交互（Gif)**  
+![npm-assistor-tag](http://image-2.plusman.cn/image/npm-assistor-tag.gif)
 
 ## Config（Important!!）
 **config 读取规则**  
@@ -56,12 +56,38 @@ gitignore_server: http://gitignore.plusman.cn:8000
 
 ## Tag 说明
 **Tag说明**  
-发布号部分遵循 [semver](http://f2e.souche.com/blog/fan-yi-ru-he-zheng-que-de-ming-ming-ruan-jian-ban-ben-hao/) 规范设计  
+发布号部分遵循 [semver](http://f2e.souche.com/blog/fan-yi-ru-he-zheng-que-de-ming-ming-ruan-jian-ban-ben-hao/) 规范设计，简版说明如下
+```javascript
+格式如 ${major}.${feature}.${patch}，遵循 semver 规范的版本号
+    选择需要递增的版本号
+        major: 主版本号，用于断代更新或大版本发布
+        feature: 特性版本号，用于向下兼容的特性新增
+        patch: 修订版本号，用于 bug 修复
+递增位的右侧位需要清零，如 1.1.2 => 1.2.0
+```
+
 发布日期部分遵循 `{year}w{weeks}{a-z: 本周第几次发布}`，此部分可选，如果服务端项目发布必带；sdk 发布一般不带  
-**GitFlow 流程**
+
+**周数定义**  
+```javascript
+const moment = require('moment');
+// 更新 week 设置
+moment.locale('zh-cn', {
+    // 每年第一周的定义：
+    // 国内：包含1月4号的那周为每年第一周
+    // 美国：包含1月1号的那周为每年第一周（苹果日历也是如此）
+    // 更新了下 moment，现在规则是 包含1月1号的那周为每年第一周，新的一周起始于周一
+    //（比较好理解，苹果日历也可设置，设置->高级->显示周数）
+    week : {
+        dow : 1, // Monday is the first day of the week.
+        doy : 7  // The week that contains Jan 1th is the first week of the year.
+    }
+});
+```
+
+**GitFlow 流程**  
 附上团队内部修改过的GitFlow 流程。[a-successful-git-branching-model/](http://nvie.com/posts/a-successful-git-branching-model/) 原博客结尾有 keynote 源码哈，可以在这基础上改出适合自己团队的 GitFlow
 ![GitFlowV2 Of souche](http://image-2.plusman.cn/image/GitFlowV2.jpg)
-
 
 ## About
 Have Fun!
