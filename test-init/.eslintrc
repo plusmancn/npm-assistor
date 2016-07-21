@@ -1,0 +1,51 @@
+{
+    "env": {
+        "es6": true,
+        "node": true
+    },
+    "extends": "eslint:recommended",
+    "rules": {
+        "indent": [
+            "error",
+            4
+        ],
+        "linebreak-style": [
+            "error",
+            "unix"
+        ],
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "semi": [
+            "error",
+            "always"
+        ],
+        "no-console": [
+            "error",
+            {
+                "allow": ["log", "info", "error"]
+            }
+        ],
+        "guard-for-in": [
+            "error"
+        ],
+        "strict": [
+            "error",
+            "global"
+        ],
+        "no-var": [
+            "error"
+        ],
+        "no-multiple-empty-lines": [
+            "error",
+            {
+                "max": 1
+            }
+        ]
+    },
+    "globals":{
+        "describe": true,
+        "it": true
+    }
+}

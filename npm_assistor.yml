@@ -1,0 +1,16 @@
+################### npm-assistor Configuration Example #########################
+
+################## 公共模版库配置 #########################
+templates:
+    # github 远端配置库，会调用 api.github.com 相关 Api 进行内容获取
+    # 支持多仓库
+    github:
+        - https://github.com/plusmancn/npm-assistor-template.git
+        # - https://github.com/yourname/yourself-tempalte.git
+    # Todo 最好支持下 gitlab，实现内网服务
+    # gitlab:
+        # - 
+################## gitignore 服务器地址 #########################
+#  项目地址: https://github.com/joeblau/gitignore.io
+#  土豪大大们，可以选择在国内部署一份，屌丝只用的起国外便宜货
+gitignore_server: http://gitignore.plusman.cn:8000
