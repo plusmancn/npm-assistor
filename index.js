@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 'use strict';
 /**
  * <plusmancn@gmail.com> created at 2016.07.20 13:34:55
