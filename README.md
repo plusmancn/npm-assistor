@@ -19,9 +19,9 @@ npm-assistor
     tag (用于发布前 master 分支的 tag 标记)
 ```
 **选择 init 后的交互（Gif)**  
-![npm-assistor-init](http://image-2.plusman.cn/image/npm-assistor-init.gif)
+![npm-assistor-init](https://github.com/plusmancn/npm-assistor/raw/master/images/npm-assistor-init.gif)
 **选择 tag 后的交互（Gif)**  
-![npm-assistor-tag](http://image-2.plusman.cn/image/npm-assistor-tag.gif)
+![npm-assistor-tag](https://github.com/plusmancn/npm-assistor/raw/master/images/npm-assistor-tag.gif)
 
 ## Config（Important!!）
 **config 读取规则**  
@@ -54,7 +54,7 @@ gitignore_server: http://gitignore.plusman.cn:8000
 **LICENSE（未做集成）**  
 [licenses list by name]( https://opensource.org/licenses/alphabetical )  
 并未做成命令行，具体可以参考，源码 `licenses-files` 文件夹，内含思维导图 xmind 格式  
-![popular-license](http://image-2.plusman.cn/image/popular-license.png)
+![popular-license](https://github.com/plusmancn/npm-assistor/raw/master/images/popular-license.png)
 
 ## Tag 说明
 **Tag说明**  
@@ -89,7 +89,7 @@ moment.locale('zh-cn', {
 
 **GitFlow 流程**  
 附上团队内部修改过的GitFlow 流程。[a-successful-git-branching-model/](http://nvie.com/posts/a-successful-git-branching-model/) 原博客结尾有 keynote 源码哈，可以在这基础上改出适合自己团队的 GitFlow
-![GitFlowV2 Of souche](http://image-2.plusman.cn/image/GitFlowV2.jpg)
+![GitFlowV2 Of souche](https://github.com/plusmancn/npm-assistor/raw/master/images/GitFlowV2.jpg)
 
 ## About
 Have Fun!
