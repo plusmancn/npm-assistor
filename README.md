@@ -1,5 +1,6 @@
 # npm-assistor
-> npm 包初始化和 git tag 辅助工具。源于搜车前端内部规范化改造，具体指内部功能模块 SDK 化和 GitFlow 流程规范化。
+> npm 包初始化和 git tag 辅助工具。源于搜车前端内部规范化改造，具体指内部功能模块 SDK 化和 GitFlow 流程规范化。  
+Github: [https://github.com/plusmancn/npm-assistor](https://github.com/plusmancn/npm-assistor) 欢迎 star 和 pr 
 
 ## Usage
 全局安装
@@ -50,6 +51,18 @@ gitignore_server: http://gitignore.plusman.cn:8000
 具体 IDE 集成参考：[eslint.org](http://eslint.org/)
 
 **LICENSE（未做集成）**  
-(licenses list by name)[https://opensource.org/licenses/alphabetical]  
+[licenses list by name]( https://opensource.org/licenses/alphabetical )  
 并未做成命令行，具体可以参考，源码 `licenses-files` 文件夹，内含思维导图 xmind 格式  
+![popular-license](http://image-2.plusman.cn/image/popular-license.png)
 
+## Tag 说明
+**Tag说明**  
+发布号部分遵循 [semver](http://f2e.souche.com/blog/fan-yi-ru-he-zheng-que-de-ming-ming-ruan-jian-ban-ben-hao/) 规范设计  
+发布日期部分遵循 `{year}w{weeks}{a-z: 本周第几次发布}`，此部分可选，如果服务端项目发布必带；sdk 发布一般不带  
+**GitFlow 流程**
+附上团队内部修改过的GitFlow 流程。[a-successful-git-branching-model/](http://nvie.com/posts/a-successful-git-branching-model/) 原博客结尾有 keynote 源码哈，可以在这基础上改出适合自己团队的 GitFlow
+![GitFlowV2 Of souche](http://image-2.plusman.cn/image/GitFlowV2.jpg)
+
+
+## About
+Have Fun!
