@@ -1,6 +1,6 @@
 {
   "name": "npm-assistor",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "description": "npm 包初始化和发布工具",
   "main": "index.js",
   "scripts": {
