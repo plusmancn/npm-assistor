@@ -13,4 +13,4 @@ templates:
 ################## gitignore 服务器地址 #########################
 #  项目地址: https://github.com/joeblau/gitignore.io
 #  土豪大大们，可以选择在国内部署一份，屌丝只用得起国外便宜货
-gitignore_server: http://gitignore.plusman.cn:8000
+gitignore_server: https://www.gitignore.io
