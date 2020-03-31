@@ -9,11 +9,30 @@
 
 const co = require('co');
 const inquirer = require('inquirer');
+const { program } = require('commander');
 
 const commandInit = require('./command_init.js');
 const commandTag = require('./command_tag.js');
 
 function main(){
+    let isCommand = false;
+    program
+    .command('init')
+    .description('用于 npm 包初始化，请在 npm init 后执行')
+    .action((source, destination) => {
+        isCommand = true;
+        commandInit();
+    });
+    program
+    .command('tag')
+    .description('用于发布前 master 分支的 tag 标记)')
+    .action((source, destination) => {
+        isCommand = true;
+        commandTag();
+    });
+    program.parse(process.argv);
+    if(isCommand) return;
+    
     let schema = [{
         type: 'list',
         name: 'command',
