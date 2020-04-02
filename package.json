@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/plusmancn/npm-assistor#readme",
   "devDependencies": {
-    "eslint": "^3.16.1",
+    "eslint": "^6.8.0",
     "mocha": "^2.5.3",
     "rewire": "^2.5.2",
     "should": "^10.0.0"
